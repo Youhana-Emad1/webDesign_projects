@@ -67,7 +67,7 @@ img[alt="mock"] {
 #front, #back{
     width: 80%;
     height: 200px;
-    backface-visibility: hidden ;
+    /* backface-visibility: hidden ; */
     position: absolute;
     border: 1px solid #fff;
     border-radius: 15px;  
@@ -87,9 +87,8 @@ img[alt="mock"] {
 
  #flip:hover #front{
     transform: rotateX(90deg);
+    transform: translate("",-200px);
     transition: all 1.5s; 
-
-
 }
 #flip:hover #back{
     transform: rotateX(0);
@@ -135,11 +134,15 @@ color: black;
 .test2{
     display: none;
     height: 80px;
+    /* transition: all 0.5s; */
+
 }
 .test:hover .test2{
     display: block!important;
+    box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.2);
+
 }
 #hover-img{
-    max-width: 70%;
+    max-width: 95%;
     height: 350px;
 }
