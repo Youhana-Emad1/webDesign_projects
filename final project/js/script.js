@@ -1,4 +1,6 @@
 const navigation = document.querySelector('#navigation');
+const slides = document.querySelectorAll(".slide")
+const dots = document.querySelectorAll(".dot")
 if (navigation) {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 200) {
@@ -8,9 +10,6 @@ if (navigation) {
         }
     });
 }
-
-let slides = document.querySelectorAll(".slide")
-let dots = document.querySelectorAll(".dot")
 let current = 0
 dots.forEach((dot, i) => {
     dot.addEventListener("click", function () {
@@ -22,7 +21,6 @@ dots.forEach((dot, i) => {
         createSlideContent();
     })
 })
-
 
 function createSlideContent() {
     const slide_content = document.querySelector('#slide-content');

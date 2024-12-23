@@ -1,5 +1,9 @@
 body{
     height: 3000vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 #nav1{
@@ -55,4 +59,87 @@ body{
 }
 img[alt="mock"] {
     height: 450px;
+}
+#flip{
+    position: relative;
+    
+}
+#front, #back{
+    width: 80%;
+    height: 200px;
+    backface-visibility: hidden ;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 15px;  
+    padding: 10px;  
+    text-align: center;
+
+}
+
+
+#front{
+    transform: rotateX(0);
+    
+}
+#back{
+    transform: rotateX(90deg);
+}
+
+ #flip:hover #front{
+    transform: rotateX(90deg);
+    transition: all 1.5s; 
+
+
+}
+#flip:hover #back{
+    transform: rotateX(0);
+    transition: all 1.5s;
+background-color: white;
+color: black;
+}
+
+
+.service-section {  
+    background: url('../images/slider2.jpg') no-repeat center center;  
+    background-attachment: fixed;
+    height: 110vh;
+    background-size: cover;  
+    padding: 50px 0;  
+    color: white;  
+    opacity: 0.9;
+}  
+
+.blue-lines {  
+    display: flex;  
+    flex-direction: column; 
+    gap: 10px; 
+}  
+
+.line {  
+    background-color: blue;  
+    height: 2px;  
+}  
+
+.short {  
+    width: 50px; 
+    
+}  
+
+.long {  
+    width: 100px;
+}  
+#lef{
+    margin-left:auto !important;
+}
+
+.test2{
+    display: none;
+    height: 80px;
+}
+.test:hover .test2{
+    display: block!important;
+}
+#hover-img{
+    max-width: 70%;
+    height: 350px;
 }
