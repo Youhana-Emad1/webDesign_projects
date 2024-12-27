@@ -233,15 +233,49 @@ img[alt="mock"] {
 
 .rad2 {
     border-radius: 50px 0px 0px 50px !important;
-    /* width: 17%; */
 }
 
 .rad3 {
     border-radius: 0px 50px 50px 0px !important;
-    /* width: 17%; */
-
 }
 
 #features i {
     font-size: 1.5rem;
+}
+#icon i{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.owl-prev {
+    color: white !important;
+    font-size: 1.5rem !important;
+    background-color: blue !important;
+    margin-right: 5% !important;
+    border-radius: 50px 0px 0px 50px !important;
+
+}
+
+.owl-next {
+    color: white !important;
+    font-size: 1.5rem !important;
+    background-color: blue !important;
+    border-radius: 0px 50px 50px 0px !important;
+
+}
+.owl-nav{
+    text-align: center !important;
+    margin-top: 5% !important;
+
+}
+.owl-nav span{
+    padding: 3px 30px !important;
+}
+#card{
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+#slider{
+    height: 80vh;
 }
