@@ -47,7 +47,7 @@ function createSlideContent() {
 
 
 
-for (let i = 0; i < 9000; i++) {
+for (let i = 0; i < 1000; i++) {
     
     if (loadingScreen) {
     
@@ -63,4 +63,5 @@ for (let i = 0; i < 9000; i++) {
         document.getElementById('content').style.display = 'block';
     }
 }
+
 

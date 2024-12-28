@@ -343,3 +343,19 @@ img[alt="mock"] {
     0% { left: -100px; } 
     100% { left: 100%; } 
 }
+.image-section{
+  background-image: url(../images/bgContact.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 ;
+
+}
+#cont{
+top: 220px;
+}
+#input_message{
+  height: 200px !important;
+}
