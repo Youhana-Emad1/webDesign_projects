@@ -76,8 +76,8 @@ img[alt="mock"] {
 #front,
 #back {
   width: 80%;
-  height: 200px;
-  /* backface-visibility: hidden ; */
+  height: 225px;
+  backface-visibility: hidden ;
   position: absolute;
   border: 1px solid #fff;
   border-radius: 15px;
@@ -94,14 +94,14 @@ img[alt="mock"] {
 }
 
 #flip:hover #front {
-  transform: rotateX(90deg);
-  transform: translate("", -200px);
-  transition: all 1.5s;
+  transform: rotateX(0deg);
+  /* transform: translate("", -200px); */
+  transition: all 0.3s;
 }
 
 #flip:hover #back {
   transform: rotateX(0);
-  transition: all 1.5s;
+  transition: all 0.3s;
   background-color: white;
   color: black;
 }
