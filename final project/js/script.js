@@ -1,8 +1,10 @@
-const navigation = document.querySelector('#navigation');
-const slides = document.querySelectorAll(".slide")
 const dots = document.querySelectorAll(".dot")
+const slides = document.querySelectorAll(".slide")
+const navigation = document.querySelector('#navigation');
+const loadingScreen = document.getElementById('loadingScreen');
+
 if (navigation) {
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (e) => {
         if (window.scrollY > 200) {
             navigation.classList.add('sticky-lg-top');
         } else {
@@ -10,6 +12,7 @@ if (navigation) {
         }
     });
 }
+
 let current = 0
 dots.forEach((dot, i) => {
     dot.addEventListener("click", function () {
@@ -31,7 +34,7 @@ function createSlideContent() {
         slide_div.id = 'slide_content';
         slide_div.innerHTML = `
             <h1>What You Do Today For Peoples2</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean <br> commodo ligula. elit uiooenean commodo ligula.</p>
+            <p class="lead opacity-75">Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean <br> commodo ligula. elit uiooenean commodo ligula.</p>
             <a href="#" class="btn btn-primary active">get start now</a>
             <a href="#" class="btn btn-primary">contact us</a>
         `;
@@ -39,6 +42,25 @@ function createSlideContent() {
 
         slide_div.style.transition = 'transition all 0.5s';
         
+    }
+}
+
+
+
+for (let i = 0; i < 9000; i++) {
+    
+    if (loadingScreen) {
+    
+        window.addEventListener('load', function() {
+    
+            loadingScreen.style.display = 'none';
+        
+    
+            document.getElementById('content').style.display = 'block';
+        });
+    } else {
+    
+        document.getElementById('content').style.display = 'block';
     }
 }
 
