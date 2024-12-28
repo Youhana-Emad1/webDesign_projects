@@ -272,8 +272,7 @@ img[alt="mock"] {
   border-radius: 10px;
   padding: 10px;
 }
-.card_body i:hover, 
-h5:hover {
+.card_body .hov:hover {
   color: blue !important;
 }
 
